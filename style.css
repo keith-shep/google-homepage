@@ -1,6 +1,4 @@
 
-/* ================================================ */
-
 * {
     margin:0;
     padding: 0;
@@ -9,22 +7,16 @@
 
 .container {
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-
-html {
-
-}
-
-/* nav CSS style */
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: auto;
-
-
 }
 
-
+/* nav CSS style */
 
 .nav {
     display: flex;
@@ -32,37 +24,40 @@ body {
     padding: 20px;
 }
 
-ul li {
+li {
     display: inline;
     padding: 5px;
-    color: black;
+    color: #555;
+    font-size: 14px;
+    margin: 0 5px;
 }
 
+li i {
+    vertical-align: middle;
+}
 
 #sign-in {
     background-color: rgb(66,133,244);
     color: white;
     border-radius: 5%;
     padding: 7px 10px 7px 10px;
-}
-
+} 
 
 /* main CSS style*/
 
+
 img {
-    width: 25%;
+    width: 300px;
 }
+
 
 .main {
-    margin-top: 125px;
-
+    margin-top: -700px;
+    text-align: center;
 }
 
-.main > div {
-    /* background-color: #ccc; */
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+.main div {
+    padding: 10px 0;
 }
 
 input[type=search] {
@@ -76,8 +71,27 @@ button {
     padding: 10px;
     margin: 5px;
     text-decoration: none;
-}
+}   
 
 /* Footer CSS style */
 
+.footer li{
+    padding: 10px 10px;
+}
+
+
+.footer {
+    padding-left: 15px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+}
+
+.footer > div{
+    margin: 10px;
+}
+
+.footer-lower {
+    display: flex;
+    justify-content: space-between;
+}
 
